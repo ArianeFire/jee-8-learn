@@ -4,7 +4,7 @@ set -eu
 
 mvn clean package
 
-cp target/jee-8-learn-1.0.0.war D:/glassfish5/glassfish/domains/domain1/autodeploy/
+cp target/Car.war D:/glassfish5/glassfish/domains/domain1/autodeploy/
 
 cd D:/glassfish5/bin
 

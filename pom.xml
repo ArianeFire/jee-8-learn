@@ -7,7 +7,7 @@
   <version>1.0.0</version>
   <packaging>war</packaging>
 
-  <name>jee-8-learn</name>
+  <name>car</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -32,6 +32,8 @@
   </dependencies>
   
   <build>
+  	<finalName>Car</finalName>
+  
     <plugins>
         <plugin>
         <groupId>org.apache.maven.plugins</groupId>

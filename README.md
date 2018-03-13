@@ -24,4 +24,4 @@ We may find the following point in practice :
 
 	To run this app, you may first launch "build-run.sh"
 	
-	Then for REST API check : http://localhost:8080/jee-8-learn-1.0.0/resources/cars
+	Then for REST API check : http://localhost:8080/Car/resources/cars
