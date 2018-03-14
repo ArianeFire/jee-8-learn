@@ -19,10 +19,13 @@ public class CarFactory {
 	//@Named("diesel")
 	@Diesel
 	Color defaultCarColor;
+	@Inject
+	@Config("config.prefix")
+	private String identifier;
 	
 	public Car createCar(Specification specification) {
 		Car car = new Car();
-		car.setIdentifier(UUID.randomUUID().toString());
+		car.setIdentifier( identifier + UUID.randomUUID().toString());
 		car.setColor(Objects.isNull(specification.getColor()) ? defaultCarColor : specification.getColor());
 		car.setEngineType(specification.getEngineType());
 		return car;
