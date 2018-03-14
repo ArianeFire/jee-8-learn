@@ -6,7 +6,12 @@ This project is kind of discovery of Java EE 8 features.
 We may find the following point in practice :
   
   Core JEE Components
-  JAX-RS (JSON-P, JSON-B)
+  
+  JAX-RS's REST Implementation
+  
+  JSON-B (Annotation) & JSON-P to customize the Output of the REST API
+  
+  
   
   
 # build-run.sh
@@ -24,4 +29,4 @@ We may find the following point in practice :
 
 	To run this app, you may first launch "build-run.sh"
 	
-	Then for REST API check : http://localhost:8080/Car/resources/cars
+	Then for REST API check : http://localhost:8080/Car/resources/cars or curl http://localhost:8080/Car/resources/cars

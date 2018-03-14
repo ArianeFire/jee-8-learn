@@ -1,9 +1,14 @@
 package ma.seydou.jee8.learn.entity;
 
+import javax.json.bind.annotation.JsonbProperty;
+import javax.json.bind.annotation.JsonbTransient;
+
 public class Car {
 
+	@JsonbTransient // This JSON-B Annotation to customize the Output of our Resources
 	private String identifier;
 	private Color color;
+	@JsonbProperty("engine")
 	private EngineType engineType;
 	public String getIdentifier() {
 		return identifier;
@@ -23,6 +28,7 @@ public class Car {
 	public void setEngineType(EngineType engineType) {
 		this.engineType = engineType;
 	}
+	
 	
 	
 }
