@@ -1,11 +1,13 @@
 package ma.seydou.jee8.learn.boundaries;
 
 import java.util.List;
+import java.util.Random;
 
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
+import ma.seydou.jee8.learn.CarCreationException;
 import ma.seydou.jee8.learn.control.CarFactory;
 import ma.seydou.jee8.learn.control.CarRepository;
 import ma.seydou.jee8.learn.entity.Car;
@@ -22,6 +24,11 @@ public class CarManufacturer {
 	Event<CarCreated> carCreatedEvent;
 
 	public Car manufactor(Specification specification) {
+		
+		if(new Random().nextBoolean()) {
+			throw new CarCreationException("Could not create a Car");
+		}
+		
 		Car car = carFactory.createCar(specification);
 		carRepository.store(car);
 		//The Event Fire is this case (Default) synchronously, the next line will not be executed until the Listener finish
