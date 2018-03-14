@@ -11,7 +11,7 @@ public class Specification {
 	@NotNull
 	private  Color color;
 	@NotNull
-	@EnvironmentalFriendly
+	//@EnvironmentalFriendly
 	private  EngineType engineType;
 	
 	public Specification(Color color, EngineType engineType) {
