@@ -5,6 +5,8 @@ import java.util.UUID;
 
 import javax.inject.Inject;
 
+import ma.seydou.jee8.learn.annotations.Config;
+import ma.seydou.jee8.learn.annotations.Diesel;
 import ma.seydou.jee8.learn.boundaries.Specification;
 import ma.seydou.jee8.learn.entity.Car;
 import ma.seydou.jee8.learn.entity.Color;

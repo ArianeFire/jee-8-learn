@@ -12,6 +12,7 @@ import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
+import ma.seydou.jee8.learn.annotations.Tracked;
 import ma.seydou.jee8.learn.control.ProcessTracker.Category;
 
 @Interceptor

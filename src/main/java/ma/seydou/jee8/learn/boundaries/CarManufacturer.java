@@ -7,11 +7,11 @@ import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
+import ma.seydou.jee8.learn.annotations.Tracked;
 import ma.seydou.jee8.learn.control.CarCache;
 import ma.seydou.jee8.learn.control.CarFactory;
 import ma.seydou.jee8.learn.control.CarRepository;
 import ma.seydou.jee8.learn.control.ProcessTracker.Category;
-import ma.seydou.jee8.learn.control.Tracked;
 import ma.seydou.jee8.learn.entity.Car;
 import ma.seydou.jee8.learn.entity.CarCreated;
 

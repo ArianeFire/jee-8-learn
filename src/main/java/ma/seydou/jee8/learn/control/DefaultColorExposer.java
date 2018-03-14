@@ -2,6 +2,7 @@ package ma.seydou.jee8.learn.control;
 
 import javax.enterprise.inject.Produces;
 
+import ma.seydou.jee8.learn.annotations.Diesel;
 import ma.seydou.jee8.learn.entity.Color;
 
 public class DefaultColorExposer {

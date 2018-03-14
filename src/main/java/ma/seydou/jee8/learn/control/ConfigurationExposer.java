@@ -9,6 +9,8 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
+import ma.seydou.jee8.learn.annotations.Config;
+
 
 @ApplicationScoped
 public class ConfigurationExposer {

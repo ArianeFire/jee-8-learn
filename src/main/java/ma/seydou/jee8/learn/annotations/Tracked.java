@@ -1,4 +1,4 @@
-package ma.seydou.jee8.learn.control;
+package ma.seydou.jee8.learn.annotations;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -8,6 +8,9 @@ import java.lang.annotation.Target;
 
 import javax.enterprise.util.Nonbinding;
 import javax.interceptor.InterceptorBinding;
+
+import ma.seydou.jee8.learn.control.ProcessTracker;
+import ma.seydou.jee8.learn.control.ProcessTracker.Category;
 
 @InterceptorBinding
 @Retention(RetentionPolicy.RUNTIME)
