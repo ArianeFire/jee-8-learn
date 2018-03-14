@@ -33,5 +33,9 @@ public class CarManufacturer {
 	public List<Car> retrieveCars(){
 		return carRepository.loadCars();
 	}
+	
+	public Car retrieveCar(String identifier) {
+		return retrieveCars().get(0);
+	}
 
 }
