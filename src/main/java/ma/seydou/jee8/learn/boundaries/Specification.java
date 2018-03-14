@@ -1,11 +1,17 @@
 package ma.seydou.jee8.learn.boundaries;
 
+import javax.validation.constraints.NotNull;
+
 import ma.seydou.jee8.learn.entity.Color;
 import ma.seydou.jee8.learn.entity.EngineType;
+import ma.seydou.jee8.learn.entity.EnvironmentalFriendly;
 
 public class Specification {
 
+	@NotNull
 	private  Color color;
+	@NotNull
+	@EnvironmentalFriendly
 	private  EngineType engineType;
 	
 	public Specification(Color color, EngineType engineType) {
