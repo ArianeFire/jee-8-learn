@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.annotation.PostConstruct;
 import javax.ejb.ConcurrencyManagement;
 import javax.ejb.ConcurrencyManagementType;
+import javax.ejb.Schedule;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.persistence.EntityManager;
@@ -16,7 +17,7 @@ import javax.persistence.PersistenceContext;
 import ma.seydou.jee8.learn.entity.Car;
 
 @Singleton
-@Startup
+@Startup  //Will Be create this bean on Application StartUp
 @ConcurrencyManagement(ConcurrencyManagementType.BEAN)
 public class CarCache {
 
@@ -30,7 +31,8 @@ public class CarCache {
 		loadCars();
 	}
 	
-	private void loadCars() {
+	@Schedule(hour = "*") // Same as Linux terminology, In this case, the method will be called every hour (Reload the car cache)
+	public void loadCars() {
 		//Entity Manager Find All Cars here.
 		//entityManager.createNamedQuery(FIND_ALL, Car.class)
 		
